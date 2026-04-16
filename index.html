@@ -4,484 +4,868 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mundial FIFA — Historia del Fútbol</title>
+    <meta name="description" content="FIFA World Cup 2026 — USA, México y Canadá. Toda la información del torneo más grande de la historia." />
+    <title>FIFA World Cup 2026</title>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,600;1,300&family=Barlow:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
 
-    <!-- ===== NAVEGACIÓN ===== -->
+    <!-- ══════════════════════════════
+         NAVBAR
+    ══════════════════════════════ -->
     <nav class="navbar">
-      <div class="nav-logo">
-        <span class="logo-icon">⚽</span>
-        <span class="logo-text">MUNDIAL FIFA</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#historia">Historia</a></li>
-        <li><a href="#campeonatos">Copas</a></li>
-        <li><a href="#estadisticas">Estadísticas</a></li>
-        <li><a href="#proximos">Próximos</a></li>
+      <a href="#hero" class="navbar__logo">
+        <span class="navbar__logo-icon">⚽</span>
+        <span class="navbar__logo-text">WORLD <span>CUP</span></span>
+      </a>
+
+      <ul class="navbar__nav" id="navMenu">
+        <li><a href="#about">Torneo</a></li>
+        <li><a href="#groups">Grupos</a></li>
+        <li><a href="#venues">Sedes</a></li>
+        <li><a href="#favorites">Favoritos</a></li>
+        <li><a href="#fixtures">Fixtures</a></li>
+        <li><a href="#newsletter" class="navbar__cta">Entradas</a></li>
       </ul>
-      <button class="nav-cta">Explorar</button>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
 
-    <!-- ===== HERO ===== -->
-    <header class="hero" id="inicio">
-      <div class="hero-bg-text">MUNDIAL</div>
-      <div class="hero-content">
-        <p class="hero-eyebrow">Desde 1930 · 22 ediciones · 80 selecciones campeonas</p>
-        <h1 class="hero-title">
-          <span class="title-line">LA COPA</span>
-          <span class="title-line accent">DEL MUNDO</span>
+    <!-- ══════════════════════════════
+         HERO
+    ══════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__inner container">
+
+        <span class="hero__eyebrow fade-up">11 de junio — 19 de julio de 2026</span>
+
+        <h1 class="hero__title fade-up fade-up--delay-1">
+          WORLD
+          <span>CUP</span>
+          2026
         </h1>
-        <p class="hero-subtitle">
-          El torneo que une naciones, rompe corazones y crea leyendas.<br />
-          Un recorrido por la historia más gloriosa del fútbol.
+
+        <p class="hero__subtitle fade-up fade-up--delay-2">
+          USA &nbsp;·&nbsp; México &nbsp;·&nbsp; Canadá
         </p>
-        <div class="hero-actions">
-          <a href="#campeonatos" class="btn-primary">Ver todos los mundiales</a>
-          <a href="#estadisticas" class="btn-ghost">Estadísticas</a>
-        </div>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-card">
-          <span class="stat-number">22</span>
-          <span class="stat-label">Mundiales</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">8</span>
-          <span class="stat-label">Campeones</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">2930</span>
-          <span class="stat-label">Goles totales</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">3.5B</span>
-          <span class="stat-label">Espectadores 2022</span>
-        </div>
-      </div>
-    </header>
 
-    <!-- ===== HISTORIA SECCIÓN ===== -->
-    <section class="historia" id="historia">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Origen</span>
-          <h2 class="section-title">El nacimiento de un sueño</h2>
-          <p class="section-desc">
-            En 1930, Jules Rimet impulsó la primera Copa del Mundo en Uruguay. 
-            13 equipos, 18 partidos y el inicio de la tradición más grande del deporte.
-          </p>
-        </div>
-        <div class="historia-grid">
-          <div class="historia-card">
-            <span class="hcard-year">1930</span>
-            <h3 class="hcard-title">El primer grito</h3>
-            <p class="hcard-desc">Uruguay acoge el primer Mundial. Los charrúas se consagran campeones ante Argentina en una final épica.</p>
+        <div class="hero__stats fade-up fade-up--delay-2">
+          <div class="hero__stat">
+            <div class="hero__stat-number">48</div>
+            <div class="hero__stat-label">Equipos</div>
           </div>
-          <div class="historia-card">
-            <span class="hcard-year">1950</span>
-            <h3 class="hcard-title">El Maracanazo</h3>
-            <p class="hcard-desc">Brasil sufre la mayor derrota de su historia ante Uruguay. 200,000 personas presencian el silencio del Maracaná.</p>
+          <div class="hero__stat">
+            <div class="hero__stat-number">104</div>
+            <div class="hero__stat-label">Partidos</div>
           </div>
-          <div class="historia-card">
-            <span class="hcard-year">1970</span>
-            <h3 class="hcard-title">El Brasil eterno</h3>
-            <p class="hcard-desc">Pelé lidera al equipo más bello de la historia. Brasil consigue la Copa Jules Rimet de forma definitiva.</p>
+          <div class="hero__stat">
+            <div class="hero__stat-number">16</div>
+            <div class="hero__stat-label">Sedes</div>
           </div>
-          <div class="historia-card">
-            <span class="hcard-year">1986</span>
-            <h3 class="hcard-title">La mano de Dios</h3>
-            <p class="hcard-desc">Maradona escribe su nombre en la historia con dos goles que resumen lo humano y lo divino del fútbol.</p>
+          <div class="hero__stat">
+            <div class="hero__stat-number">12</div>
+            <div class="hero__stat-label">Grupos</div>
           </div>
         </div>
+
+        <div class="hero__actions fade-up fade-up--delay-3">
+          <a href="#fixtures" class="btn btn--primary">Ver Fixtures</a>
+          <a href="#groups" class="btn btn--outline">Ver Grupos</a>
+        </div>
+
+        <div class="hero__countdown fade-up fade-up--delay-4">
+          <div class="countdown-block">
+            <div class="countdown-block__number" id="days">000</div>
+            <div class="countdown-block__label">Días</div>
+          </div>
+          <div class="countdown-block">
+            <div class="countdown-block__number" id="hours">00</div>
+            <div class="countdown-block__label">Horas</div>
+          </div>
+          <div class="countdown-block">
+            <div class="countdown-block__number" id="minutes">00</div>
+            <div class="countdown-block__label">Min</div>
+          </div>
+          <div class="countdown-block">
+            <div class="countdown-block__number" id="seconds">00</div>
+            <div class="countdown-block__label">Seg</div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- ===== TODOS LOS MUNDIALES ===== -->
-    <section class="campeonatos" id="campeonatos">
-      <div class="container">
-        <div class="section-header light">
-          <span class="section-tag gold">Palmarés</span>
-          <h2 class="section-title">Todos los Mundiales</h2>
-          <p class="section-desc">Cada edición, una historia. Cada campeón, una leyenda.</p>
-        </div>
-
-        <div class="mundiales-grid">
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1930</span>
-              <span class="mc-flag">🇺🇾</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Uruguay</h3>
-              <p class="mc-host">Sede: Uruguay</p>
-              <p class="mc-final">Final: Uruguay 4–2 Argentina</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1934</span>
-              <span class="mc-flag">🇮🇹</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Italia</h3>
-              <p class="mc-host">Sede: Italia</p>
-              <p class="mc-final">Final: Italia 2–1 Checoslovaquia</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1938</span>
-              <span class="mc-flag">🇮🇹</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Italia</h3>
-              <p class="mc-host">Sede: Francia</p>
-              <p class="mc-final">Final: Italia 4–2 Hungría</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1950</span>
-              <span class="mc-flag">🇺🇾</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Uruguay</h3>
-              <p class="mc-host">Sede: Brasil</p>
-              <p class="mc-final">Final: Uruguay 2–1 Brasil</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1954</span>
-              <span class="mc-flag">🇩🇪</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Alemania Occ.</h3>
-              <p class="mc-host">Sede: Suiza</p>
-              <p class="mc-final">Final: Alemania 3–2 Hungría</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1958</span>
-              <span class="mc-flag">🇧🇷</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Brasil</h3>
-              <p class="mc-host">Sede: Suecia</p>
-              <p class="mc-final">Final: Brasil 5–2 Suecia</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1962</span>
-              <span class="mc-flag">🇧🇷</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Brasil</h3>
-              <p class="mc-host">Sede: Chile</p>
-              <p class="mc-final">Final: Brasil 3–1 Checoslovaquia</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1966</span>
-              <span class="mc-flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Inglaterra</h3>
-              <p class="mc-host">Sede: Inglaterra</p>
-              <p class="mc-final">Final: Inglaterra 4–2 Alemania</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1970</span>
-              <span class="mc-flag">🇧🇷</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Brasil</h3>
-              <p class="mc-host">Sede: México</p>
-              <p class="mc-final">Final: Brasil 4–1 Italia</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1974</span>
-              <span class="mc-flag">🇩🇪</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Alemania Occ.</h3>
-              <p class="mc-host">Sede: Alemania Occ.</p>
-              <p class="mc-final">Final: Alemania 2–1 Países Bajos</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1978</span>
-              <span class="mc-flag">🇦🇷</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Argentina</h3>
-              <p class="mc-host">Sede: Argentina</p>
-              <p class="mc-final">Final: Argentina 3–1 Países Bajos</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1982</span>
-              <span class="mc-flag">🇮🇹</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Italia</h3>
-              <p class="mc-host">Sede: España</p>
-              <p class="mc-final">Final: Italia 3–1 Alemania</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1986</span>
-              <span class="mc-flag">🇦🇷</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Argentina</h3>
-              <p class="mc-host">Sede: México</p>
-              <p class="mc-final">Final: Argentina 3–2 Alemania</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1990</span>
-              <span class="mc-flag">🇩🇪</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Alemania</h3>
-              <p class="mc-host">Sede: Italia</p>
-              <p class="mc-final">Final: Alemania 1–0 Argentina</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1994</span>
-              <span class="mc-flag">🇧🇷</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Brasil</h3>
-              <p class="mc-host">Sede: Estados Unidos</p>
-              <p class="mc-final">Final: Brasil 0–0 Italia (3–2 pen.)</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">1998</span>
-              <span class="mc-flag">🇫🇷</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Francia</h3>
-              <p class="mc-host">Sede: Francia</p>
-              <p class="mc-final">Final: Francia 3–0 Brasil</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">2002</span>
-              <span class="mc-flag">🇧🇷</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Brasil</h3>
-              <p class="mc-host">Sede: Corea/Japón</p>
-              <p class="mc-final">Final: Brasil 2–0 Alemania</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">2006</span>
-              <span class="mc-flag">🇮🇹</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Italia</h3>
-              <p class="mc-host">Sede: Alemania</p>
-              <p class="mc-final">Final: Italia 1–1 Francia (5–3 pen.)</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">2010</span>
-              <span class="mc-flag">🇪🇸</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">España</h3>
-              <p class="mc-host">Sede: Sudáfrica</p>
-              <p class="mc-final">Final: España 1–0 Países Bajos</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">2014</span>
-              <span class="mc-flag">🇩🇪</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Alemania</h3>
-              <p class="mc-host">Sede: Brasil</p>
-              <p class="mc-final">Final: Alemania 1–0 Argentina</p>
-            </div>
-          </article>
-
-          <article class="mundial-card">
-            <div class="mc-header">
-              <span class="mc-year">2018</span>
-              <span class="mc-flag">🇫🇷</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Francia</h3>
-              <p class="mc-host">Sede: Rusia</p>
-              <p class="mc-final">Final: Francia 4–2 Croacia</p>
-            </div>
-          </article>
-
-          <article class="mundial-card destacado">
-            <div class="mc-header">
-              <span class="mc-year">2022</span>
-              <span class="mc-flag">🇦🇷</span>
-            </div>
-            <div class="mc-body">
-              <h3 class="mc-country">Argentina</h3>
-              <p class="mc-host">Sede: Qatar</p>
-              <p class="mc-final">Final: Argentina 3–3 Francia (4–2 pen.)</p>
-              <span class="mc-badge">Último campeón</span>
-            </div>
-          </article>
-
-        </div>
+    <!-- ══════════════════════════════
+         TICKER
+    ══════════════════════════════ -->
+    <div class="ticker">
+      <div class="ticker__inner">
+        <span class="ticker__item">48 selecciones clasificadas</span>
+        <span class="ticker__item">104 partidos en total</span>
+        <span class="ticker__item">16 estadios en 3 países</span>
+        <span class="ticker__item">Primera vez con 3 sedes mundialistas</span>
+        <span class="ticker__item">Gran final en MetLife Stadium</span>
+        <span class="ticker__item">48 selecciones clasificadas</span>
+        <span class="ticker__item">104 partidos en total</span>
+        <span class="ticker__item">16 estadios en 3 países</span>
+        <span class="ticker__item">Primera vez con 3 sedes mundialistas</span>
+        <span class="ticker__item">Gran final en MetLife Stadium</span>
       </div>
-    </section>
+    </div>
 
-    <!-- ===== ESTADÍSTICAS ===== -->
-    <section class="estadisticas" id="estadisticas">
+    <!-- ══════════════════════════════
+         ABOUT
+    ══════════════════════════════ -->
+    <section class="about" id="about">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Datos</span>
-          <h2 class="section-title">Récords y estadísticas</h2>
-        </div>
-        <div class="stats-flex">
-          <div class="stat-block">
-            <span class="sb-icon">🏆</span>
-            <span class="sb-num">5</span>
-            <span class="sb-label">Títulos de Brasil</span>
-            <span class="sb-note">El país más ganador de la historia</span>
-          </div>
-          <div class="stat-block">
-            <span class="sb-icon">⚽</span>
-            <span class="sb-num">16</span>
-            <span class="sb-label">Goles de Miroslav Klose</span>
-            <span class="sb-note">Máximo goleador histórico de mundiales</span>
-          </div>
-          <div class="stat-block">
-            <span class="sb-icon">🌍</span>
-            <span class="sb-num">48</span>
-            <span class="sb-label">Equipos en 2026</span>
-            <span class="sb-note">La edición más grande de la historia</span>
-          </div>
-          <div class="stat-block">
-            <span class="sb-icon">📅</span>
-            <span class="sb-num">96</span>
-            <span class="sb-label">Años de historia</span>
-            <span class="sb-note">Desde Uruguay 1930 hasta hoy</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="about__grid">
 
-    <!-- ===== PRÓXIMO MUNDIAL ===== -->
-    <section class="proximos" id="proximos">
-      <div class="container">
-        <div class="proximo-flex">
-          <div class="proximo-info">
-            <span class="section-tag gold">Próximamente</span>
-            <h2 class="proximo-title">Mundial 2026</h2>
-            <p class="proximo-desc">
-              Por primera vez en la historia, tres países coorganizan el torneo. 
-              Estados Unidos, Canadá y México recibirán a 48 selecciones en 16 sedes.
-              El torneo más grande jamás celebrado.
+          <div class="about__text">
+            <span class="about__edition">23</span>
+            <span class="section-label">El Torneo</span>
+            <h2 class="section-title" style="text-align:left; margin-bottom:0.5rem;">La Copa del Mundo más grande de la historia</h2>
+            <div class="section-divider" style="margin-left:0;"></div>
+            <p class="about__body">
+              La 23ª edición de la Copa Mundial de la FIFA reunirá a 48 selecciones nacionales por primera vez en la historia. 
+              Tres países anfitriones —Estados Unidos, México y Canadá— pondrán a disposición 16 estadios de primer nivel para 
+              albergar el evento deportivo más seguido del planeta.
             </p>
-            <div class="proximo-sedes">
-              <span class="sede-pill">🇺🇸 Estados Unidos</span>
-              <span class="sede-pill">🇨🇦 Canadá</span>
-              <span class="sede-pill">🇲🇽 México</span>
-            </div>
-            <div class="proximo-fechas">
-              <div class="fecha-item">
-                <span class="fi-label">Inicio</span>
-                <span class="fi-date">11 Junio 2026</span>
+            <div class="about__stats">
+              <div class="about__stat">
+                <div class="about__stat-number">5 M</div>
+                <div class="about__stat-label">Entradas disponibles</div>
               </div>
-              <div class="fecha-item">
-                <span class="fi-label">Final</span>
-                <span class="fi-date">19 Julio 2026</span>
+              <div class="about__stat">
+                <div class="about__stat-number">6 B</div>
+                <div class="about__stat-label">Espectadores globales</div>
               </div>
-              <div class="fecha-item">
-                <span class="fi-label">Partidos</span>
-                <span class="fi-date">104</span>
+              <div class="about__stat">
+                <div class="about__stat-number">$11B</div>
+                <div class="about__stat-label">Impacto económico</div>
               </div>
             </div>
           </div>
-          <div class="proximo-visual">
-            <div class="ball-wrap">
-              <div class="big-ball">⚽</div>
-              <div class="orbit orbit-1"></div>
-              <div class="orbit orbit-2"></div>
+
+          <div class="about__image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80"
+              alt="Estadio Mundial 2026"
+            />
+            <div class="about__image-badge">🏆 FIFA World Cup™️ 2026</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         GRUPOS
+    ══════════════════════════════ -->
+    <section class="groups" id="groups">
+      <div class="container">
+        <span class="section-label">Fase de Grupos</span>
+        <h2 class="section-title">12 Grupos</h2>
+        <div class="section-divider"></div>
+
+        <div class="groups__grid">
+
+          <div class="group-card">
+            <div class="group-card__letter">A</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country host"><span class="flag">🇺🇸</span> Estados Unidos</li>
+              <li class="group-card__country"><span class="flag">🏴󠁧󠁢󠁷󠁬󠁳󠁿</span> Gales</li>
+              <li class="group-card__country"><span class="flag">🇨🇲</span> Camerún</li>
+              <li class="group-card__country"><span class="flag">🇮🇷</span> Irán</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">B</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span> Inglaterra</li>
+              <li class="group-card__country"><span class="flag">🇮🇷</span> Irán</li>
+              <li class="group-card__country"><span class="flag">🇺🇸</span> USA</li>
+              <li class="group-card__country"><span class="flag">🇸🇳</span> Senegal</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">C</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🇦🇷</span> Argentina</li>
+              <li class="group-card__country"><span class="flag">🇸🇦</span> Arabia S.</li>
+              <li class="group-card__country"><span class="flag">🇲🇽</span> México</li>
+              <li class="group-card__country"><span class="flag">🇵🇱</span> Polonia</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">D</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🇫🇷</span> Francia</li>
+              <li class="group-card__country"><span class="flag">🇦🇺</span> Australia</li>
+              <li class="group-card__country"><span class="flag">🇩🇰</span> Dinamarca</li>
+              <li class="group-card__country"><span class="flag">🇹🇳</span> Túnez</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">E</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🇪🇸</span> España</li>
+              <li class="group-card__country"><span class="flag">🇨🇷</span> Costa Rica</li>
+              <li class="group-card__country"><span class="flag">🇩🇪</span> Alemania</li>
+              <li class="group-card__country"><span class="flag">🇯🇵</span> Japón</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">F</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🇧🇪</span> Bélgica</li>
+              <li class="group-card__country"><span class="flag">🇨🇦</span> Canadá</li>
+              <li class="group-card__country"><span class="flag">🇲🇦</span> Marruecos</li>
+              <li class="group-card__country"><span class="flag">🇭🇷</span> Croacia</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">G</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🇧🇷</span> Brasil</li>
+              <li class="group-card__country"><span class="flag">🇸🇷</span> Surinam</li>
+              <li class="group-card__country"><span class="flag">🇷🇸</span> Serbia</li>
+              <li class="group-card__country"><span class="flag">🇨🇭</span> Suiza</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">H</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🇵🇹</span> Portugal</li>
+              <li class="group-card__country"><span class="flag">🇬🇭</span> Ghana</li>
+              <li class="group-card__country"><span class="flag">🇺🇾</span> Uruguay</li>
+              <li class="group-card__country"><span class="flag">🇰🇷</span> Corea del Sur</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">I</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🇳🇱</span> Países Bajos</li>
+              <li class="group-card__country"><span class="flag">🇸🇳</span> Senegal</li>
+              <li class="group-card__country"><span class="flag">🇪🇨</span> Ecuador</li>
+              <li class="group-card__country"><span class="flag">🇶🇦</span> Qatar</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">J</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span> Inglaterra</li>
+              <li class="group-card__country"><span class="flag">🇨🇴</span> Colombia</li>
+              <li class="group-card__country"><span class="flag">🇳🇬</span> Nigeria</li>
+              <li class="group-card__country"><span class="flag">🇦🇱</span> Albania</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">K</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🇮🇹</span> Italia</li>
+              <li class="group-card__country"><span class="flag">🇨🇱</span> Chile</li>
+              <li class="group-card__country"><span class="flag">🇵🇾</span> Paraguay</li>
+              <li class="group-card__country"><span class="flag">🇸🇰</span> Eslovaquia</li>
+            </ul>
+          </div>
+
+          <div class="group-card">
+            <div class="group-card__letter">L</div>
+            <ul class="group-card__countries">
+              <li class="group-card__country"><span class="flag">🇩🇪</span> Alemania</li>
+              <li class="group-card__country"><span class="flag">🇯🇵</span> Japón</li>
+              <li class="group-card__country"><span class="flag">🇿🇦</span> Sudáfrica</li>
+              <li class="group-card__country"><span class="flag">🇵🇪</span> Perú</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         SEDES
+    ══════════════════════════════ -->
+    <section class="venues" id="venues">
+      <div class="container">
+        <span class="section-label">Estadios</span>
+        <h2 class="section-title">16 Sedes Mundiales</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="container">
+        <div class="venues__scroll">
+
+          <div class="venue-card">
+            <div class="venue-card__city">New York / NJ</div>
+            <div class="venue-card__stadium">MetLife Stadium</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>82,500 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>🏆</span>
+                <span>Sede de la Final</span>
+              </div>
             </div>
+            <span class="venue-card__country-tag">🇺🇸 USA</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Los Ángeles</div>
+            <div class="venue-card__stadium">SoFi Stadium</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>70,000 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Inglewood, CA</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇺🇸 USA</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Dallas</div>
+            <div class="venue-card__stadium">AT&T Stadium</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>80,000 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Arlington, TX</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇺🇸 USA</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">San Francisco</div>
+            <div class="venue-card__stadium">Levi's Stadium</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>68,500 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Santa Clara, CA</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇺🇸 USA</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Ciudad de México</div>
+            <div class="venue-card__stadium">Estadio Azteca</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>87,000 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>⭐</span>
+                <span>Único en 3 Mundiales</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇲🇽 México</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Guadalajara</div>
+            <div class="venue-card__stadium">Estadio Akron</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>49,850 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Jalisco, MX</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇲🇽 México</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Monterrey</div>
+            <div class="venue-card__stadium">Estadio BBVA</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>53,500 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Nuevo León, MX</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇲🇽 México</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Toronto</div>
+            <div class="venue-card__stadium">BMO Field</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>45,000 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Ontario, CA</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇨🇦 Canadá</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Vancouver</div>
+            <div class="venue-card__stadium">BC Place</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>54,500 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Columbia Brit.</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇨🇦 Canadá</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         FAVORITOS
+    ══════════════════════════════ -->
+    <section class="favorites" id="favorites">
+      <div class="container">
+        <span class="section-label">Análisis</span>
+        <h2 class="section-title">Favoritos al Título</h2>
+        <div class="section-divider"></div>
+
+        <div class="favorites__list">
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇫🇷</span> Francia</div>
+              <div class="favorite-item__prob">22%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 22%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇧🇷</span> Brasil</div>
+              <div class="favorite-item__prob">18%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 18%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇦🇷</span> Argentina</div>
+              <div class="favorite-item__prob">17%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 17%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇪🇸</span> España</div>
+              <div class="favorite-item__prob">14%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 14%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🏴󠁧󠁢󠁥󠁮󠁧󠁿</span> Inglaterra</div>
+              <div class="favorite-item__prob">12%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 12%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇩🇪</span> Alemania</div>
+              <div class="favorite-item__prob">10%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 10%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇵🇹</span> Portugal</div>
+              <div class="favorite-item__prob">7%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 7%;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         FIXTURES
+    ══════════════════════════════ -->
+    <section class="fixtures" id="fixtures">
+      <div class="container">
+        <span class="section-label">Calendario</span>
+        <h2 class="section-title">Fixtures</h2>
+        <div class="section-divider"></div>
+
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="groups-tab">Fase de Grupos</button>
+          <button class="tab-btn" data-tab="knockouts-tab">Eliminatorias</button>
+          <button class="tab-btn" data-tab="final-tab">Final</button>
+        </div>
+
+        <div class="tab-content active" id="groups-tab">
+          <div class="fixtures__grid">
+
+            <div class="match-card">
+              <div class="match-card__date">11 Jun 2026 &nbsp;·&nbsp; Grupo A</div>
+              <div class="match-card__teams">
+                <span class="match-card__team">🇺🇸 USA</span>
+                <span class="match-card__vs">VS</span>
+                <span class="match-card__team">🏴󠁧󠁢󠁷󠁬󠁳󠁿 Gales</span>
+              </div>
+              <div class="match-card__venue">MetLife Stadium, New Jersey</div>
+            </div>
+
+            <div class="match-card">
+              <div class="match-card__date">12 Jun 2026 &nbsp;·&nbsp; Grupo C</div>
+              <div class="match-card__teams">
+                <span class="match-card__team">🇦🇷 ARG</span>
+                <span class="match-card__vs">VS</span>
+                <span class="match-card__team">🇸🇦 KSA</span>
+              </div>
+              <div class="match-card__venue">Estadio Azteca, México</div>
+            </div>
+
+            <div class="match-card">
+              <div class="match-card__date">13 Jun 2026 &nbsp;·&nbsp; Grupo D</div>
+              <div class="match-card__teams">
+                <span class="match-card__team">🇫🇷 FRA</span>
+                <span class="match-card__vs">VS</span>
+                <span class="match-card__team">🇦🇺 AUS</span>
+              </div>
+              <div class="match-card__venue">SoFi Stadium, Los Ángeles</div>
+            </div>
+
+            <div class="match-card">
+              <div class="match-card__date">14 Jun 2026 &nbsp;·&nbsp; Grupo E</div>
+              <div class="match-card__teams">
+                <span class="match-card__team">🇪🇸 ESP</span>
+                <span class="match-card__vs">VS</span>
+                <span class="match-card__team">🇩🇪 GER</span>
+              </div>
+              <div class="match-card__venue">AT&T Stadium, Dallas</div>
+            </div>
+
+            <div class="match-card">
+              <div class="match-card__date">15 Jun 2026 &nbsp;·&nbsp; Grupo G</div>
+              <div class="match-card__teams">
+                <span class="match-card__team">🇧🇷 BRA</span>
+                <span class="match-card__vs">VS</span>
+                <span class="match-card__team">🇷🇸 SRB</span>
+              </div>
+              <div class="match-card__venue">Levi's Stadium, San Francisco</div>
+            </div>
+
+            <div class="match-card">
+              <div class="match-card__date">16 Jun 2026 &nbsp;·&nbsp; Grupo F</div>
+              <div class="match-card__teams">
+                <span class="match-card__team">🇧🇪 BEL</span>
+                <span class="match-card__vs">VS</span>
+                <span class="match-card__team">🇨🇦 CAN</span>
+              </div>
+              <div class="match-card__venue">BC Place, Vancouver</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="tab-content" id="knockouts-tab">
+          <div class="fixtures__grid">
+
+            <div class="match-card">
+              <div class="match-card__date">2 Jul 2026 &nbsp;·&nbsp; Octavos de Final</div>
+              <div class="match-card__teams">
+                <span class="match-card__team">1A</span>
+                <span class="match-card__vs">VS</span>
+                <span class="match-card__team">2B</span>
+              </div>
+              <div class="match-card__venue">Por confirmar</div>
+            </div>
+
+            <div class="match-card">
+              <div class="match-card__date">5 Jul 2026 &nbsp;·&nbsp; Cuartos de Final</div>
+              <div class="match-card__teams">
+                <span class="match-card__team">Ganador M1</span>
+                <span class="match-card__vs">VS</span>
+                <span class="match-card__team">Ganador M2</span>
+              </div>
+              <div class="match-card__venue">MetLife Stadium, NJ</div>
+            </div>
+
+            <div class="match-card">
+              <div class="match-card__date">14 Jul 2026 &nbsp;·&nbsp; Semifinal</div>
+              <div class="match-card__teams">
+                <span class="match-card__team">TBD</span>
+                <span class="match-card__vs">VS</span>
+                <span class="match-card__team">TBD</span>
+              </div>
+              <div class="match-card__venue">AT&T Stadium, Dallas</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="tab-content" id="final-tab">
+          <div class="fixtures__grid">
+
+            <div class="match-card" style="max-width: 480px; margin: 0 auto; border-color: rgba(201,168,76,0.4);">
+              <div class="match-card__date" style="font-size: 1rem; letter-spacing: 3px;">
+                🏆 &nbsp; 19 de Julio de 2026 &nbsp; 🏆
+              </div>
+              <div class="match-card__teams" style="margin: 1.5rem 0;">
+                <span class="match-card__team" style="font-size: 2rem;">TBD</span>
+                <span class="match-card__vs" style="font-size: 1.2rem; background: rgba(201,168,76,0.15); padding: 0.5rem 1rem;">VS</span>
+                <span class="match-card__team" style="font-size: 2rem;">TBD</span>
+              </div>
+              <div class="match-card__venue">
+                MetLife Stadium — New Jersey, USA<br />
+                <small style="color: var(--color-accent); letter-spacing: 2px; font-size: 0.7rem;">GRAN FINAL</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         NEWSLETTER
+    ══════════════════════════════ -->
+    <section class="newsletter" id="newsletter">
+      <div class="container">
+        <div class="newsletter__inner">
+          <h2 class="newsletter__title">No te pierdas nada</h2>
+          <p class="newsletter__desc">
+            Recibe fixtures, resultados y noticias del Mundial 2026 directamente en tu correo.
+          </p>
+          <div class="newsletter__form">
+            <input
+              type="email"
+              class="newsletter__input"
+              placeholder="tu@correo.com"
+              aria-label="Correo electrónico"
+            />
+            <button class="btn btn--primary" onclick="handleSubscribe()">Suscribirse</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
+    <!-- ══════════════════════════════
+         FOOTER
+    ══════════════════════════════ -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-flex">
-          <div class="footer-brand">
-            <span class="logo-icon">⚽</span>
-            <span class="logo-text">MUNDIAL FIFA</span>
+
+        <div class="footer__top">
+          <div class="footer__brand">
+            <div class="footer__brand-name">WORLD <span>CUP</span> 2026</div>
+            <p class="footer__brand-desc">El torneo más grande de la historia del fútbol. USA · México · Canadá.</p>
           </div>
-          <p class="footer-copy">© 2026 · Historia del fútbol mundial · Todos los derechos reservados</p>
-          <div class="footer-links">
-            <a href="#inicio">Inicio</a>
-            <a href="#historia">Historia</a>
-            <a href="#campeonatos">Copas</a>
+
+          <div class="footer__links-group">
+            <div class="footer__links-title">Torneo</div>
+            <ul class="footer__links">
+              <li><a href="#groups">Grupos</a></li>
+              <li><a href="#fixtures">Fixtures</a></li>
+              <li><a href="#favorites">Favoritos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links-group">
+            <div class="footer__links-title">Sedes</div>
+            <ul class="footer__links">
+              <li><a href="#venues">Estadios USA</a></li>
+              <li><a href="#venues">Estadios México</a></li>
+              <li><a href="#venues">Estadios Canadá</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links-group">
+            <div class="footer__links-title">Info</div>
+            <ul class="footer__links">
+              <li><a href="#about">Sobre el Torneo</a></li>
+              <li><a href="#newsletter">Newsletter</a></li>
+              <li><a href="#">FIFA.com</a></li>
+            </ul>
           </div>
         </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">©️ 2026 World Cup Fan Page. Proyecto educativo — no afiliado a FIFA.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+
       </div>
     </footer>
 
-  </body>
+    <!-- ══════════════════════════════
+         JAVASCRIPT
+    ══════════════════════════════ -->
+    <script>
+      /* ── Countdown ── */
+      (function () {
+        var target = new Date('2026-06-11T00:00:00').getTime();
 
-</html>
+        function pad(n) {
+          return String(n).padStart(2, '0');
+        }
+
+        function tick() {
+          var now  = Date.now();
+          var diff = target - now;
+
+          if (diff <= 0) {
+            document.getElementById('days').textContent    = '000';
+            document.getElementById('hours').textContent   = '00';
+            document.getElementById('minutes').textContent = '00';
+            document.getElementById('seconds').textContent = '00';
+            return;
+          }
+
+          var days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+          var hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+          document.getElementById('days').textContent    = String(days).padStart(3, '0');
+          document.getElementById('hours').textContent   = pad(hours);
+          document.getElementById('minutes').textContent = pad(minutes);
+          document.getElementById('seconds').textContent = pad(seconds);
+        }
+
+        tick();
+        setInterval(tick, 1000);
+      })();
+
+      /* ── Tabs ── */
+      (function () {
+        var buttons = document.querySelectorAll('.tab-btn');
+        var panels  = document.querySelectorAll('.tab-content');
+
+        buttons.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var target = btn.getAttribute('data-tab');
+
+            buttons.forEach(function (b) { b.classList.remove('active'); });
+            panels.forEach(function (p) { p.classList.remove('active'); });
+
+            btn.classList.add('active');
+            document.getElementById(target).classList.add('active');
+          });
+        });
+      })();
+
+      /* ── Menú hamburguesa ── */
+      (function () {
+        var hamburger = document.getElementById('hamburger');
+        var navMenu   = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function () {
+          navMenu.classList.toggle('open');
+        });
+
+        navMenu.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navMenu.classList.remove('open');
+          });
+        });
+      })();
+
+      /* ── Scroll suave (para navegadores sin soporte nativo) ── */
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          var selector = this.getAttribute('href');
+          var target   = document.querySelector(selector);
+
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      /* ── Newsletter ── */
+      function handleSubscribe() {
+        var input = document.querySelector('.newsletter__input');
+        var value = input.value.trim();
+
+        if (!value || !value.includes('@')) {
+          alert('Por favor, ingresa un correo válido.');
+          return;
+        }
+
+        alert('¡Gracias! Te mantendremos informado sobre el Mundial 2026 ⚽');
+        input.value = '';
+      }
+    </script>
 
   </body>
 
