@@ -1,2 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FIFA World Cup 2026 — USA, México y Canadá. Toda la información del torneo más grande de la historia." />
+    <title>FIFA World Cup 2026</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+
+
+
+    <!----------------NAVBAR---------->
+    <nav class="navbar">
+      <a href="#hero" class="navbar__logo">
+        <span class="navbar__logo-icon">⚽</span>
+        <span class="navbar__logo-text">WORLD <span>CUP</span></span>
+      </a>
+
+      <ul class="navbar__nav" id="navMenu">
+        <li><a href="#about">Torneo</a></li>
+        <li><a href="#groups">Grupos</a></li>
+        <li><a href="#venues">Sedes</a></li>
+        <li><a href="#favorites">Favoritos</a></li>
+        <li><a href="#fixtures">Fixtures</a></li>
+        <li><a href="#newsletter" class="navbar__cta">Entradas</a></li>
+      </ul>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+
+
+
+    <!---------------------------HERO--------------->
+    <section class="hero" id="hero">
+      <div class="hero__inner container">
+
+        <span class="hero__eyebrow fade-up">11 de junio — 19 de julio de 2026</span>
+
+        <h1 class="hero__title fade-up fade-up--delay-1">
+          WORLD
+          <span>CUP</span>
+          2026
+        </h1>
+
+        <p class="hero__subtitle fade-up fade-up--delay-2">
+          USA &nbsp;·&nbsp; México &nbsp;·&nbsp; Canadá
+        </p>
+
+        <div class="hero__stats fade-up fade-up--delay-2">
+          <div class="hero__stat">
+            <div class="hero__stat-number">48</div>
+            <div class="hero__stat-label">Equipos</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number">104</div>
+            <div class="hero__stat-label">Partidos</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number">16</div>
+            <div class="hero__stat-label">Sedes</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number">12</div>
+            <div class="hero__stat-label">Grupos</div>
+          </div>
+        </div>
+
+        <div class="hero__actions fade-up fade-up--delay-3">
+          <a href="#fixtures" class="btn btn--primary">Ver Fixtures</a>
+          <a href="#groups" class="btn btn--outline">Ver Grupos</a>
+        </div>
+
+        <div class="hero__countdown fade-up fade-up--delay-4">
+          <div class="countdown-block">
+            <div class="countdown-block__number" id="days">000</div>
+            <div class="countdown-block__label">Días</div>
+          </div>
+          <div class="countdown-block">
+            <div class="countdown-block__number" id="hours">00</div>
+            <div class="countdown-block__label">Horas</div>
+          </div>
+          <div class="countdown-block">
+            <div class="countdown-block__number" id="minutes">00</div>
+            <div class="countdown-block__label">Min</div>
+          </div>
+          <div class="countdown-block">
+            <div class="countdown-block__number" id="seconds">00</div>
+            <div class="countdown-block__label">Seg</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <!---------------- TICKER------------------------>
+    <div class="ticker">
+      <div class="ticker__inner">
+        <span class="ticker__item">48 selecciones clasificadas</span>
+        <span class="ticker__item">104 partidos en total</span>
+        <span class="ticker__item">16 estadios en 3 países</span>
+        <span class="ticker__item">Primera vez con 3 sedes mundialistas</span>
+        <span class="ticker__item">Gran final en MetLife Stadium</span>
+        <span class="ticker__item">48 selecciones clasificadas</span>
+        <span class="ticker__item">104 partidos en total</span>
+        <span class="ticker__item">16 estadios en 3 países</span>
+        <span class="ticker__item">Primera vez con 3 sedes mundialistas</span>
+        <span class="ticker__item">Gran final en MetLife Stadium</span>
+      </div>
+    </div>
+
+
+
+
+    <!-------------INFO----------------->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__grid">
+
+          <div class="about__text">
+            <span class="about__edition">23</span>
+            <span class="section-label">El Torneo</span>
+            <h2 class="section-title" style="text-align:left; margin-bottom:0.5rem;">La Copa del Mundo más grande de la historia</h2>
+            <div class="section-divider" style="margin-left:0;"></div>
+            <p class="about__body">
+              La 23ª edición de la Copa Mundial de la FIFA reunirá a 48 selecciones nacionales por primera vez en la historia. 
+              Tres países anfitriones —Estados Unidos, México y Canadá— pondrán a disposición 16 estadios de primer nivel para 
+              albergar el evento deportivo más seguido del planeta.
+            </p>
+            <div class="about__stats">
+              <div class="about__stat">
+                <div class="about__stat-number">5 M</div>
+                <div class="about__stat-label">Entradas disponibles</div>
+              </div>
+              <div class="about__stat">
+                <div class="about__stat-number">6 B</div>
+                <div class="about__stat-label">Espectadores globales</div>
+              </div>
+              <div class="about__stat">
+                <div class="about__stat-number">$11B</div>
+                <div class="about__stat-label">Impacto económico</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80"
+              alt="Estadio Mundial 2026"
+            />
+            <div class="about__image-badge">🏆 FIFA World Cup™️ 2026</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!----------- GRUPOS------------>
+ <section class="groups" id="groups">
+  <div class="container">
+    <span class="section-label">Fase de Grupos</span>
+    <h2 class="section-title">12 Grupos Oficiales</h2>
+    <div class="section-divider"></div>
+
+    <div class="groups__grid">
+
+      <div class="group-card">
+        <div class="group-card__letter">A</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/mx.png"> México</li>
+          <li><img src="https://flagcdn.com/w40/za.png"> Sudáfrica</li>
+          <li><img src="https://flagcdn.com/w40/kr.png"> Corea del Sur</li>
+          <li>?? Repechaje</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">B</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/ca.png"> Canadá</li>
+          <li><img src="https://flagcdn.com/w40/qa.png"> Catar</li>
+          <li><img src="https://flagcdn.com/w40/ch.png"> Suiza</li>
+          <li>?? Repechaje</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">C</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/br.png"> Brasil</li>
+          <li><img src="https://flagcdn.com/w40/ma.png"> Marruecos</li>
+          <li><img src="https://flagcdn.com/w40/ht.png"> Haití</li>
+          <li><img src="https://flagcdn.com/w40/gb-sct.png"> Escocia</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">D</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/us.png"> USA</li>
+          <li><img src="https://flagcdn.com/w40/py.png"> Paraguay</li>
+          <li><img src="https://flagcdn.com/w40/au.png"> Australia</li>
+          <li>?? Repechaje</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">E</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/de.png"> Alemania</li>
+          <li><img src="https://flagcdn.com/w40/hr.png"> Croacia</li>
+          <li><img src="https://flagcdn.com/w40/ci.png"> Costa de Marfil</li>
+          <li><img src="https://flagcdn.com/w40/ec.png"> Ecuador</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">F</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/nl.png"> Países Bajos</li>
+          <li><img src="https://flagcdn.com/w40/jp.png"> Japón</li>
+          <li><img src="https://flagcdn.com/w40/tn.png"> Túnez</li>
+          <li>?? Repechaje</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">G</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/be.png"> Bélgica</li>
+          <li><img src="https://flagcdn.com/w40/eg.png"> Egipto</li>
+          <li><img src="https://flagcdn.com/w40/ir.png"> Irán</li>
+          <li><img src="https://flagcdn.com/w40/nz.png"> Nueva Zelanda</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">H</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/es.png"> España</li>
+          <li><img src="https://flagcdn.com/w40/sa.png"> Arabia Saudí</li>
+          <li><img src="https://flagcdn.com/w40/cv.png"> Cabo Verde</li>
+          <li><img src="https://flagcdn.com/w40/uy.png"> Uruguay</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">I</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/fr.png"> Francia</li>
+          <li><img src="https://flagcdn.com/w40/sn.png"> Senegal</li>
+          <li><img src="https://flagcdn.com/w40/no.png"> Noruega</li>
+          <li>?? Repechaje</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">J</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/ar.png"> Argentina</li>
+          <li><img src="https://flagcdn.com/w40/dz.png"> Argelia</li>
+          <li><img src="https://flagcdn.com/w40/at.png"> Austria</li>
+          <li><img src="https://flagcdn.com/w40/jo.png"> Jordania</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">K</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/pt.png"> Portugal</li>
+          <li><img src="https://flagcdn.com/w40/co.png"> Colombia</li>
+          <li><img src="https://flagcdn.com/w40/uz.png"> Uzbekistán</li>
+          <li>?? Repechaje</li>
+        </ul>
+      </div>
+
+      <div class="group-card">
+        <div class="group-card__letter">L</div>
+        <ul class="group-card__countries">
+          <li><img src="https://flagcdn.com/w40/gb-eng.png"> Inglaterra</li>
+          <li><img src="https://flagcdn.com/w40/hr.png"> Croacia</li>
+          <li><img src="https://flagcdn.com/w40/gh.png"> Ghana</li>
+          <li><img src="https://flagcdn.com/w40/pa.png"> Panamá</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-------------------SEDES---------------->
+    <section class="venues" id="venues">
+      <div class="container">
+        <span class="section-label">Estadios</span>
+        <h2 class="section-title">16 Sedes Mundiales</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="container">
+        <div class="venues__scroll">
+
+          <div class="venue-card">
+            <div class="venue-card__city">New York / NJ</div>
+            <div class="venue-card__stadium">MetLife Stadium</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>82,500 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>🏆</span>
+                <span>Sede de la Final</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇺🇸 USA</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Los Ángeles</div>
+            <div class="venue-card__stadium">SoFi Stadium</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>70,000 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Inglewood, CA</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇺🇸 USA</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Dallas</div>
+            <div class="venue-card__stadium">AT&T Stadium</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>80,000 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Arlington, TX</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇺🇸 USA</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">San Francisco</div>
+            <div class="venue-card__stadium">Levi's Stadium</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>68,500 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Santa Clara, CA</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇺🇸 USA</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Ciudad de México</div>
+            <div class="venue-card__stadium">Estadio Azteca</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>87,000 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>⭐</span>
+                <span>Único en 3 Mundiales</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇲🇽 México</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Guadalajara</div>
+            <div class="venue-card__stadium">Estadio Akron</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>49,850 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Jalisco, MX</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇲🇽 México</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Monterrey</div>
+            <div class="venue-card__stadium">Estadio BBVA</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>53,500 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Nuevo León, MX</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇲🇽 México</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Toronto</div>
+            <div class="venue-card__stadium">BMO Field</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>45,000 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Ontario, CA</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇨🇦 Canadá</span>
+          </div>
+
+          <div class="venue-card">
+            <div class="venue-card__city">Vancouver</div>
+            <div class="venue-card__stadium">BC Place</div>
+            <div class="venue-card__meta">
+              <div class="venue-card__meta-item">
+                <span>🏟️</span>
+                <span>54,500 asientos</span>
+              </div>
+              <div class="venue-card__meta-item">
+                <span>📍</span>
+                <span>Columbia Brit.</span>
+              </div>
+            </div>
+            <span class="venue-card__country-tag">🇨🇦 Canadá</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!------------FAVORITOS------------->
+    <section class="favorites" id="favorites">
+      <div class="container">
+        <span class="section-label">Análisis</span>
+        <h2 class="section-title">Favoritos al Título</h2>
+        <div class="section-divider"></div>
+
+        <div class="favorites__list">
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇫🇷</span> Francia</div>
+              <div class="favorite-item__prob">22%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 22%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇧🇷</span> Argentina</div>
+              <div class="favorite-item__prob">18%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 18%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇦🇷</span> Brasil</div>
+              <div class="favorite-item__prob">17%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 17%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇪🇸</span> España</div>
+              <div class="favorite-item__prob">14%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 14%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>e🇳</span> Inglaterra</div>
+              <div class="favorite-item__prob">12%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 12%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇩🇪</span> Alemania</div>
+              <div class="favorite-item__prob">10%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 10%;"></div>
+            </div>
+          </div>
+
+          <div class="favorite-item">
+            <div class="favorite-item__header">
+              <div class="favorite-item__team"><span>🇵🇹</span> Portugal</div>
+              <div class="favorite-item__prob">7%</div>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-bar__fill" style="width: 7%;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!---------------NEWSLETTER-------------->
+    <section class="newsletter" id="newsletter">
+      <div class="container">
+        <div class="newsletter__inner">
+          <h2 class="newsletter__title">No te pierdas nada</h2>
+          <p class="newsletter__desc">
+            Recibe fixtures, resultados y noticias del Mundial 2026 directamente en tu correo.
+          </p>
+          <div class="newsletter__form">
+            <input
+              type="email"
+              class="newsletter__input"
+              placeholder="tu@correo.com"
+              aria-label="Correo electrónico"
+            />
+            <button class="btn btn--primary" onclick="handleSubscribe()">Suscribirse</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!----------FOOTER-------------------->
+    <footer class="footer">
+      <div class="container">
+
+        <div class="footer__top">
+          <div class="footer__brand">
+            <div class="footer__brand-name">WORLD <span>CUP</span> 2026</div>
+            <p class="footer__brand-desc">El torneo más grande de la historia del fútbol. USA · México · Canadá.</p>
+          </div>
+
+          <div class="footer__links-group">
+            <div class="footer__links-title">Torneo</div>
+            <ul class="footer__links">
+              <li><a href="#groups">Grupos</a></li>
+              <li><a href="#fixtures">Fixtures</a></li>
+              <li><a href="#favorites">Favoritos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links-group">
+            <div class="footer__links-title">Sedes</div>
+            <ul class="footer__links">
+              <li><a href="#venues">Estadios USA</a></li>
+              <li><a href="#venues">Estadios México</a></li>
+              <li><a href="#venues">Estadios Canadá</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links-group">
+            <div class="footer__links-title">Info</div>
+            <ul class="footer__links">
+              <li><a href="#about">Sobre el Torneo</a></li>
+              <li><a href="#newsletter">Newsletter</a></li>
+              <li><a href="#">FIFA.com</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">©️ 2026 World Cup Fan Page. Proyecto educativo — no afiliado a FIFA.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+
+
+    <!----------------JAVASCRIPT----------------->
+    <script>
+      /* ── milisegundos ── */
+      (function () {
+        var target = new Date('2026-06-11T00:00:00').getTime();
+
+        function pad(n) {
+          return String(n).padStart(2, '0');
+        }
+/* ── tiempo actual ── */
+        function tick() {
+          var now  = Date.now();
+          var diff = target - now;
+/* ── todo en 0 ── */
+          if (diff <= 0) {
+            document.getElementById('days').textContent    = '000';
+            document.getElementById('hours').textContent   = '00';
+            document.getElementById('minutes').textContent = '00';
+            document.getElementById('seconds').textContent = '00';
+            return;
+          }
+/* ── calcula ── */
+          var days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+          var hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+          document.getElementById('days').textContent    = String(days).padStart(3, '0');
+          document.getElementById('hours').textContent   = pad(hours);
+          document.getElementById('minutes').textContent = pad(minutes);
+          document.getElementById('seconds').textContent = pad(seconds);
+        }
+
+        tick();
+        setInterval(tick, 1000);
+      })();
+
+      /* ── Tabs ── */
+      (function () {
+        var buttons = document.querySelectorAll('.tab-btn');
+        var panels  = document.querySelectorAll('.tab-content');
+
+        buttons.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var target = btn.getAttribute('data-tab');
+
+            buttons.forEach(function (b) { b.classList.remove('active'); });
+            panels.forEach(function (p) { p.classList.remove('active'); });
+
+            btn.classList.add('active');
+            document.getElementById(target).classList.add('active');
+          });
+        });
+      })();
+
+      /* ── Menú hamburguesa ── */
+      (function () {
+        var hamburger = document.getElementById('hamburger');
+        var navMenu   = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function () {
+          navMenu.classList.toggle('open');
+        });
+
+        navMenu.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navMenu.classList.remove('open');
+          });
+        });
+      })();
+
+      /* ── Scroll suave (para navegadores sin soporte nativo) ── */
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          var selector = this.getAttribute('href');
+          var target   = document.querySelector(selector);
+
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      /* ── Newsletter ── */
+      function handleSubscribe() {
+        var input = document.querySelector('.newsletter__input');
+        var value = input.value.trim();
+
+        if (!value || !value.includes('@')) {
+          alert('Por favor, ingresa un correo válido.');
+          return;
+        }
+
+        alert('¡Gracias! Te mantendremos informado sobre el Mundial 2026 ⚽');
+        input.value = '';
+      }
+    </script>
+
+  </body>
+
+</html>
 
