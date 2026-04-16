@@ -1,19 +1,484 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Mundial</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundial FIFA — Historia del Fútbol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,600;1,300&family=Barlow:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<h1>⚽ Mundial Interactivo</h1>
+  <body>
 
-<div class="equipos">
-    <div class="equipo">Colombia</div>
-    <div class="equipo">Brasil</div>
-</div>
+    <!-- ===== NAVEGACIÓN ===== -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">MUNDIAL FIFA</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#campeonatos">Copas</a></li>
+        <li><a href="#estadisticas">Estadísticas</a></li>
+        <li><a href="#proximos">Próximos</a></li>
+      </ul>
+      <button class="nav-cta">Explorar</button>
+    </nav>
 
-</body>
+    <!-- ===== HERO ===== -->
+    <header class="hero" id="inicio">
+      <div class="hero-bg-text">MUNDIAL</div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Desde 1930 · 22 ediciones · 80 selecciones campeonas</p>
+        <h1 class="hero-title">
+          <span class="title-line">LA COPA</span>
+          <span class="title-line accent">DEL MUNDO</span>
+        </h1>
+        <p class="hero-subtitle">
+          El torneo que une naciones, rompe corazones y crea leyendas.<br />
+          Un recorrido por la historia más gloriosa del fútbol.
+        </p>
+        <div class="hero-actions">
+          <a href="#campeonatos" class="btn-primary">Ver todos los mundiales</a>
+          <a href="#estadisticas" class="btn-ghost">Estadísticas</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">22</span>
+          <span class="stat-label">Mundiales</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">8</span>
+          <span class="stat-label">Campeones</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">2930</span>
+          <span class="stat-label">Goles totales</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3.5B</span>
+          <span class="stat-label">Espectadores 2022</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== HISTORIA SECCIÓN ===== -->
+    <section class="historia" id="historia">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Origen</span>
+          <h2 class="section-title">El nacimiento de un sueño</h2>
+          <p class="section-desc">
+            En 1930, Jules Rimet impulsó la primera Copa del Mundo en Uruguay. 
+            13 equipos, 18 partidos y el inicio de la tradición más grande del deporte.
+          </p>
+        </div>
+        <div class="historia-grid">
+          <div class="historia-card">
+            <span class="hcard-year">1930</span>
+            <h3 class="hcard-title">El primer grito</h3>
+            <p class="hcard-desc">Uruguay acoge el primer Mundial. Los charrúas se consagran campeones ante Argentina en una final épica.</p>
+          </div>
+          <div class="historia-card">
+            <span class="hcard-year">1950</span>
+            <h3 class="hcard-title">El Maracanazo</h3>
+            <p class="hcard-desc">Brasil sufre la mayor derrota de su historia ante Uruguay. 200,000 personas presencian el silencio del Maracaná.</p>
+          </div>
+          <div class="historia-card">
+            <span class="hcard-year">1970</span>
+            <h3 class="hcard-title">El Brasil eterno</h3>
+            <p class="hcard-desc">Pelé lidera al equipo más bello de la historia. Brasil consigue la Copa Jules Rimet de forma definitiva.</p>
+          </div>
+          <div class="historia-card">
+            <span class="hcard-year">1986</span>
+            <h3 class="hcard-title">La mano de Dios</h3>
+            <p class="hcard-desc">Maradona escribe su nombre en la historia con dos goles que resumen lo humano y lo divino del fútbol.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TODOS LOS MUNDIALES ===== -->
+    <section class="campeonatos" id="campeonatos">
+      <div class="container">
+        <div class="section-header light">
+          <span class="section-tag gold">Palmarés</span>
+          <h2 class="section-title">Todos los Mundiales</h2>
+          <p class="section-desc">Cada edición, una historia. Cada campeón, una leyenda.</p>
+        </div>
+
+        <div class="mundiales-grid">
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1930</span>
+              <span class="mc-flag">🇺🇾</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Uruguay</h3>
+              <p class="mc-host">Sede: Uruguay</p>
+              <p class="mc-final">Final: Uruguay 4–2 Argentina</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1934</span>
+              <span class="mc-flag">🇮🇹</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Italia</h3>
+              <p class="mc-host">Sede: Italia</p>
+              <p class="mc-final">Final: Italia 2–1 Checoslovaquia</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1938</span>
+              <span class="mc-flag">🇮🇹</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Italia</h3>
+              <p class="mc-host">Sede: Francia</p>
+              <p class="mc-final">Final: Italia 4–2 Hungría</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1950</span>
+              <span class="mc-flag">🇺🇾</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Uruguay</h3>
+              <p class="mc-host">Sede: Brasil</p>
+              <p class="mc-final">Final: Uruguay 2–1 Brasil</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1954</span>
+              <span class="mc-flag">🇩🇪</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Alemania Occ.</h3>
+              <p class="mc-host">Sede: Suiza</p>
+              <p class="mc-final">Final: Alemania 3–2 Hungría</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1958</span>
+              <span class="mc-flag">🇧🇷</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Brasil</h3>
+              <p class="mc-host">Sede: Suecia</p>
+              <p class="mc-final">Final: Brasil 5–2 Suecia</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1962</span>
+              <span class="mc-flag">🇧🇷</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Brasil</h3>
+              <p class="mc-host">Sede: Chile</p>
+              <p class="mc-final">Final: Brasil 3–1 Checoslovaquia</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1966</span>
+              <span class="mc-flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Inglaterra</h3>
+              <p class="mc-host">Sede: Inglaterra</p>
+              <p class="mc-final">Final: Inglaterra 4–2 Alemania</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1970</span>
+              <span class="mc-flag">🇧🇷</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Brasil</h3>
+              <p class="mc-host">Sede: México</p>
+              <p class="mc-final">Final: Brasil 4–1 Italia</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1974</span>
+              <span class="mc-flag">🇩🇪</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Alemania Occ.</h3>
+              <p class="mc-host">Sede: Alemania Occ.</p>
+              <p class="mc-final">Final: Alemania 2–1 Países Bajos</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1978</span>
+              <span class="mc-flag">🇦🇷</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Argentina</h3>
+              <p class="mc-host">Sede: Argentina</p>
+              <p class="mc-final">Final: Argentina 3–1 Países Bajos</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1982</span>
+              <span class="mc-flag">🇮🇹</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Italia</h3>
+              <p class="mc-host">Sede: España</p>
+              <p class="mc-final">Final: Italia 3–1 Alemania</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1986</span>
+              <span class="mc-flag">🇦🇷</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Argentina</h3>
+              <p class="mc-host">Sede: México</p>
+              <p class="mc-final">Final: Argentina 3–2 Alemania</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1990</span>
+              <span class="mc-flag">🇩🇪</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Alemania</h3>
+              <p class="mc-host">Sede: Italia</p>
+              <p class="mc-final">Final: Alemania 1–0 Argentina</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1994</span>
+              <span class="mc-flag">🇧🇷</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Brasil</h3>
+              <p class="mc-host">Sede: Estados Unidos</p>
+              <p class="mc-final">Final: Brasil 0–0 Italia (3–2 pen.)</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">1998</span>
+              <span class="mc-flag">🇫🇷</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Francia</h3>
+              <p class="mc-host">Sede: Francia</p>
+              <p class="mc-final">Final: Francia 3–0 Brasil</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">2002</span>
+              <span class="mc-flag">🇧🇷</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Brasil</h3>
+              <p class="mc-host">Sede: Corea/Japón</p>
+              <p class="mc-final">Final: Brasil 2–0 Alemania</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">2006</span>
+              <span class="mc-flag">🇮🇹</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Italia</h3>
+              <p class="mc-host">Sede: Alemania</p>
+              <p class="mc-final">Final: Italia 1–1 Francia (5–3 pen.)</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">2010</span>
+              <span class="mc-flag">🇪🇸</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">España</h3>
+              <p class="mc-host">Sede: Sudáfrica</p>
+              <p class="mc-final">Final: España 1–0 Países Bajos</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">2014</span>
+              <span class="mc-flag">🇩🇪</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Alemania</h3>
+              <p class="mc-host">Sede: Brasil</p>
+              <p class="mc-final">Final: Alemania 1–0 Argentina</p>
+            </div>
+          </article>
+
+          <article class="mundial-card">
+            <div class="mc-header">
+              <span class="mc-year">2018</span>
+              <span class="mc-flag">🇫🇷</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Francia</h3>
+              <p class="mc-host">Sede: Rusia</p>
+              <p class="mc-final">Final: Francia 4–2 Croacia</p>
+            </div>
+          </article>
+
+          <article class="mundial-card destacado">
+            <div class="mc-header">
+              <span class="mc-year">2022</span>
+              <span class="mc-flag">🇦🇷</span>
+            </div>
+            <div class="mc-body">
+              <h3 class="mc-country">Argentina</h3>
+              <p class="mc-host">Sede: Qatar</p>
+              <p class="mc-final">Final: Argentina 3–3 Francia (4–2 pen.)</p>
+              <span class="mc-badge">Último campeón</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ESTADÍSTICAS ===== -->
+    <section class="estadisticas" id="estadisticas">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Datos</span>
+          <h2 class="section-title">Récords y estadísticas</h2>
+        </div>
+        <div class="stats-flex">
+          <div class="stat-block">
+            <span class="sb-icon">🏆</span>
+            <span class="sb-num">5</span>
+            <span class="sb-label">Títulos de Brasil</span>
+            <span class="sb-note">El país más ganador de la historia</span>
+          </div>
+          <div class="stat-block">
+            <span class="sb-icon">⚽</span>
+            <span class="sb-num">16</span>
+            <span class="sb-label">Goles de Miroslav Klose</span>
+            <span class="sb-note">Máximo goleador histórico de mundiales</span>
+          </div>
+          <div class="stat-block">
+            <span class="sb-icon">🌍</span>
+            <span class="sb-num">48</span>
+            <span class="sb-label">Equipos en 2026</span>
+            <span class="sb-note">La edición más grande de la historia</span>
+          </div>
+          <div class="stat-block">
+            <span class="sb-icon">📅</span>
+            <span class="sb-num">96</span>
+            <span class="sb-label">Años de historia</span>
+            <span class="sb-note">Desde Uruguay 1930 hasta hoy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRÓXIMO MUNDIAL ===== -->
+    <section class="proximos" id="proximos">
+      <div class="container">
+        <div class="proximo-flex">
+          <div class="proximo-info">
+            <span class="section-tag gold">Próximamente</span>
+            <h2 class="proximo-title">Mundial 2026</h2>
+            <p class="proximo-desc">
+              Por primera vez en la historia, tres países coorganizan el torneo. 
+              Estados Unidos, Canadá y México recibirán a 48 selecciones en 16 sedes.
+              El torneo más grande jamás celebrado.
+            </p>
+            <div class="proximo-sedes">
+              <span class="sede-pill">🇺🇸 Estados Unidos</span>
+              <span class="sede-pill">🇨🇦 Canadá</span>
+              <span class="sede-pill">🇲🇽 México</span>
+            </div>
+            <div class="proximo-fechas">
+              <div class="fecha-item">
+                <span class="fi-label">Inicio</span>
+                <span class="fi-date">11 Junio 2026</span>
+              </div>
+              <div class="fecha-item">
+                <span class="fi-label">Final</span>
+                <span class="fi-date">19 Julio 2026</span>
+              </div>
+              <div class="fecha-item">
+                <span class="fi-label">Partidos</span>
+                <span class="fi-date">104</span>
+              </div>
+            </div>
+          </div>
+          <div class="proximo-visual">
+            <div class="ball-wrap">
+              <div class="big-ball">⚽</div>
+              <div class="orbit orbit-1"></div>
+              <div class="orbit orbit-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-flex">
+          <div class="footer-brand">
+            <span class="logo-icon">⚽</span>
+            <span class="logo-text">MUNDIAL FIFA</span>
+          </div>
+          <p class="footer-copy">© 2026 · Historia del fútbol mundial · Todos los derechos reservados</p>
+          <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#historia">Historia</a>
+            <a href="#campeonatos">Copas</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
 </html>
